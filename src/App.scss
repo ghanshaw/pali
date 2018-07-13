@@ -1,0 +1,452 @@
+// Brand Color
+// RBG: rgb(70, 52,  77) 
+// HEX: 
+
+$primary-color: #62476d;
+$seondary-color: #3324a7; 
+$light-color: rgba(97, 71, 108, 0.1);
+$box-shadow: 0 4px 9px 4px rgba(70, 70, 70, 0.22);
+/* 
+Gradient
+Purple: #b46bd0
+Blue: #3324a7 
+*/
+
+////////////////////////////
+// Site-wide
+////////////////////////////
+html {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 0px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+}
+  
+.container-fluid {
+    padding: 0px;
+}
+////////////////////////////
+// General Purpose
+////////////////////////////
+.center {
+    text-align: center;
+}
+  
+.bold {
+    font-weight: bold;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.margin-top-0 {
+    margin-top: 0px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.margin-bottom-75 {
+    margin-bottom: 70px;
+}
+
+.margin-right-40 {
+    margin-right: 40px;
+}
+
+.line-height-1_5 {
+    line-height: 1.5;
+}
+
+.top-bottom-padding {
+    padding: 1.5em 0 1.5em 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.smaller {
+    font-size: 12px;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    &.column {
+        flex-direction: column;
+    }
+
+    &.left {
+        justify-content: left;
+    }
+}
+
+/* XS */
+@media (min-width: 0px) {
+    .xs-no-border {
+        border: none;
+    }   
+
+    .xs-text-align-center {
+        text-align: center;
+    }
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .sm-right-border-dashed {
+        border-right: 2px dotted white;
+    }
+
+    .sm-float-left{
+        float: left;
+    }
+}
+
+
+/* Medium */
+@media (min-width: 992px) {
+    .md-float-left{
+        float: left;
+    }
+
+    .md-text-align-right {
+        text-align: right;
+    }
+}
+
+////////////////////////////
+// Spacing
+////////////////////////////
+
+.spacing {
+    &.spacing-small {
+        margin: 10px 0px;
+    }
+
+    &.spacing-medium {
+        margin: 25px 0px;
+    }
+
+    &.spacing-large {
+        margin: 50px 0px;
+    }
+
+    &.spacing-xlarge {
+        margin: 75px 0px;
+    }
+}
+
+////////////////////////////
+// FigCaption
+////////////////////////////
+
+.figCaption {
+    img {
+        width: 60px;
+    }
+}
+
+////////////////////////////
+// Button/CTA
+////////////////////////////
+.cta {
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: $box-shadow;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+
+    &.cta-primary {
+        background-color: $primary-color;
+        color: white;
+        border: 1px solid #999;
+    }
+
+    &.cta-secondary {
+        color: $primary-color;
+    }
+}
+
+////////////////////////////
+// Header
+////////////////////////////
+.brand {
+    padding: 0px;
+}
+  
+.brand img {
+    max-height: 40px;
+    margin-top: 5px;
+}
+  
+.navbar-white {
+    background-color: rgba(255, 255, 255, 0.45);
+    border: none;
+}
+  
+.nav-item a {
+    color: #46344d !important;
+    font-weight: 700;
+}
+
+////////////////////////////
+// What Is Pali
+////////////////////////////
+.what-is-pali {
+    .highlight {
+        background-color: $light-color;
+        padding: 20px 50px;
+        color: $primary-color;
+        border-radius: 10px;
+
+        .message {
+            // line-height: 1.5;
+        }
+    }
+}
+
+
+////////////////////////////
+// Features
+////////////////////////////
+.feature {
+    text-align: left;
+
+    &.wrapper {
+        height: 400px;
+    }
+    
+    .row {
+        height: 100%;
+    }
+        
+    .col {
+        height: 100%;
+    }
+
+    i {
+        margin-right: 10px;
+        color: $primary-color;
+    }
+
+    .img-wrapper {
+        img {
+            max-height: 400px;
+            max-width: 100%;
+        }
+    }
+}
+
+////////////////////////////
+// Integrations
+////////////////////////////
+.integrations {
+    background-color: $light-color;
+    padding: 50px 0px !important;
+
+    .row {
+        height: 300px;
+    }
+
+    .col {
+        height: 300px;
+    }
+
+    img {
+        height: 300px;
+    }
+}
+
+////////////////////////////
+// Solution
+////////////////////////////
+.solution {
+    .card {
+        padding: 20px 100px;
+        text-align: left;
+        box-shadow: 4px 4px 15px 7px #c3bdca42;
+        border-radius: 5px;
+    }
+}
+
+////////////////////////////
+// Tile
+////////////////////////////
+.tile {
+    height: 250px;
+    padding: 10%;
+    margin: 2%;
+    border-radius: 10px;
+    transition: background-color .3s;
+    background-color: none;
+  }
+  
+  .tile:hover {
+    background-color: #eee;
+    
+  }
+  
+  .tile-title {
+    color: #3324a7;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .tile-description {
+    line-height: 1.5;
+  }
+  
+  ////////////////////////////
+  // Footer
+  ////////////////////////////
+  .footer {
+      background: $primary-color;
+      color: white;
+    
+      .demo {
+          height: 300px;
+      }
+      .navbar-footer {
+          background: none;
+          border: none;
+      }
+  
+      .navbar-footer a {
+          color: white !important;
+      }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
