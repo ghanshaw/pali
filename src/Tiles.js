@@ -12,11 +12,11 @@ class Tiles extends Component {
         let tileArr = [];
         tiles.list.map((tile, index) => {
           tileArr.push(
-            <Col key={index} xs={12} sm={6} md={4}>
-                <div className="tile text-align-left">
+            <Col key={index} xs={12} sm={6} md={4} className="tile">
+                <div className="wrapper text-align-left">
                     <img src={tile.src} />
-                    <h4 className="tile-title">{tile.title}</h4>
-                    <h4 className="tile-description">{tile.description}</h4>
+                    <h4 className="title">{tile.title}</h4>
+                    <h4 className="description">{tile.description}</h4>
                 </div>
             </Col>
           )
@@ -33,7 +33,7 @@ class Tiles extends Component {
 
     render() {
         return (
-            <Grid fluid={false}>
+            <Grid fluid={false} className="tiles">
                 <Row>
                     <h2 className="margin-bottom-40 bold">{tiles.header}</h2>
                 </Row>

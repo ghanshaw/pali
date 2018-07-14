@@ -45,11 +45,11 @@ class App extends Component {
           {/* <div style={spacing}></div> */}
 
           {/* Hero */}
-          <Spacing spacing="large"></Spacing>
+          <Spacing spacing="xxlarge"></Spacing>
           <Hero></Hero>
 
           {/* What is Pali? */}
-          <Spacing spacing="large"></Spacing>
+          <Spacing spacing="medium"></Spacing>
           <WhatIsPali></WhatIsPali>
 
           {/* Features */}

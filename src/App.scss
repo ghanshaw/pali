@@ -2,10 +2,13 @@
 // RBG: rgb(70, 52,  77) 
 // HEX: 
 
-$primary-color: #62476d;
+// $primary-color: #5a39b3;
+$primary-color: #3324a7;
 $seondary-color: #3324a7; 
+$off-black: #333740;
+$grey: #5d6373;
 $light-color: rgba(97, 71, 108, 0.1);
-$box-shadow: 0 4px 9px 4px rgba(70, 70, 70, 0.22);
+$box-shadow: 0 4px 9px 0px rgba(70, 70, 70, 0.22);
 /* 
 Gradient
 Purple: #b46bd0
@@ -44,18 +47,21 @@ padding: 0;
 font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Nunito', sans-serif;
+h1, h2, h3, h4, h5, h6, p, a, button {
+    // font-family: 'Nunito', sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 300;
     line-height: 1.5;
+    color: #333740;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: normal;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 h3 {
@@ -226,6 +232,9 @@ h4 {
     &.spacing-xlarge {
         margin: 75px 0px;
     }
+    &.spacing-xxlarge {
+        margin: 100px 0px;
+    }
 }
 
 ////////////////////////////
@@ -234,7 +243,33 @@ h4 {
 
 .figCaption {
     img {
-        width: 60px;
+        width: 50px;
+    }
+
+    .header {
+        color: $primary-color;
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    &.left {
+        text-align: left;
+        align-items: start;
+    }
+
+    &.right {
+        text-align: right;
+        align-items: end;
+    }
+
+    &.center {
+        text-align: center;
+    }
+
+    .body {
+        font-size: 17px;
+        line-height: 28px;
+        color: $grey;
     }
 }
 
@@ -242,18 +277,17 @@ h4 {
 // Button/CTA
 ////////////////////////////
 .cta {
-    padding: 15px 40px;
+    padding: 10px 35px;
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: $box-shadow;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border: none;
 
     &.cta-primary {
         background-color: $primary-color;
         color: white;
-        border: 1px solid #999;
     }
 
     &.cta-secondary {
@@ -274,13 +308,38 @@ h4 {
 }
   
 .navbar-white {
-    background-color: rgba(255, 255, 255, 0.45);
+    // background-color: rgba(255, 255, 255, 0.45);
+    background-color: white;
     border: none;
 }
   
 .nav-item a {
-    color: #46344d !important;
     font-weight: 700;
+    color: $off-black !important;
+
+    &:hover {
+        color: $primary-color !important;
+    }
+}
+
+////////////////////////////
+// Hero
+////////////////////////////
+.hero {
+    .header {
+        line-height: 1.1;
+    }
+
+    .subheader {
+        margin-top: 125px;
+    }
+
+    img {
+        position: absolute;
+        top: -95px;
+        left: -135px;
+        width: 138%;
+    }
 }
 
 ////////////////////////////
@@ -294,7 +353,7 @@ h4 {
         border-radius: 10px;
 
         .message {
-            // line-height: 1.5;
+            color: $primary-color;
         }
     }
 }
@@ -338,6 +397,18 @@ h4 {
     background-color: $light-color;
     padding: 50px 0px !important;
 
+    .title {
+        color: $primary-color;
+    }
+
+    .gear {
+        width: 500px;
+        position: absolute;
+        top: -160px;
+        left: -385px;
+        transform: rotate(-45deg);
+    }
+
     .row {
         height: 300px;
     }
@@ -346,7 +417,7 @@ h4 {
         height: 300px;
     }
 
-    img {
+    .companies {
         height: 300px;
     }
 }
@@ -356,60 +427,88 @@ h4 {
 ////////////////////////////
 .solution {
     .card {
-        padding: 20px 100px;
-        text-align: left;
+        position: relative;
+        overflow: hidden;
         box-shadow: 4px 4px 15px 7px #c3bdca42;
         border-radius: 5px;
-    }
+
+        .icon {
+            position: absolute;
+            height: 85%;
+            top: 10px;
+            left: -55px;            
+        }
+
+        .enterprise-icon {
+            fill: $primary-color;
+        }
+
+        .content {
+            padding: 20px 60px 20px 120px;
+            text-align: left;                  
+        }
+    }  
 }
 
 ////////////////////////////
 // Tile
 ////////////////////////////
-.tile {
-    height: 250px;
-    padding: 10%;
-    margin: 2%;
-    border-radius: 10px;
-    transition: background-color .3s;
-    background-color: none;
-  }
-  
-  .tile:hover {
-    background-color: #eee;
+.tiles {
+
+    .tile {
+        .wrapper {
+            height: 250px;
+            padding: 10%;
+            margin: 2%;
+            border-radius: 10px;
+            transition: background-color .3s;
+            background-color: none;
+        }
     
-  }
-  
-  .tile-title {
-    color: #3324a7;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  
-  .tile-description {
-    line-height: 1.5;
-  }
-  
-  ////////////////////////////
-  // Footer
-  ////////////////////////////
-  .footer {
-      background: $primary-color;
-      color: white;
-    
-      .demo {
-          height: 300px;
-      }
-      .navbar-footer {
-          background: none;
-          border: none;
-      }
-  
-      .navbar-footer a {
-          color: white !important;
-      }
-  }
+        &:hover {
+            background-color: #eee;
+        }
+
+        .title {
+            color: #3324a7;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .description {
+            line-height: 1.5;
+        }
+    }  
+}
+
+////////////////////////////
+// Footer
+////////////////////////////
+.footer {
+    background: $primary-color;
+    color: white;
+
+    .demo {
+        height: 300px;
+    }
+    .navbar-footer {
+        background: none;
+        border: none;
+    }
+
+    .navbar-footer a {
+        color: white !important;
+    }
+
+    .header {
+        color: white;
+    }
+
+    .subheader {
+        color: white;
+    }
+}
 
   
 

@@ -14,7 +14,7 @@ class HowItWorks extends Component {
         constants.steps.map((item, index) => {
             figCaptionArr.push(
                 <Col key={index} md={3}>
-                    <FigCaption key={index} header={item.header} body={item.body} src={item.src}></FigCaption>
+                    <FigCaption key={index} header={item.header} body={item.body} src={item.src} alignment="left"></FigCaption>
                 </Col>
             );
         });
@@ -32,7 +32,7 @@ class HowItWorks extends Component {
 
                 <Row className="margin-bottom-50">
                     <Col xs={12}>
-                        <h3 className="text-align-center">{constants.subtitle}</h3>
+                        <h3 className="text-align-center margin-top-0">{constants.subtitle}</h3>
                     </Col>
                 </Row>
 

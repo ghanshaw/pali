@@ -19,6 +19,9 @@ class Spacing extends Component {
             case "xlarge":
                 this.spacing = "spacing-xlarge";
                 break;
+            case "xxlarge":
+                this.spacing = "spacing-xxlarge";
+                break;
             default:
                 this.spacing = "spacing-small";
                 break;

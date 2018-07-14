@@ -17,13 +17,14 @@ class Integrations extends Component {
                     <Col md={4} mdOffset={2} className="col text-align-left">
                         <div className="flex-parent">
                             <div className="flex-child">
-                                <h3 className="bold">{integrations.title}</h3>
+                                <img src="images/gear.svg" className="gear"/>
+                                <h3 className="bold title">{integrations.title}</h3>
                                 <h4>{integrations.body}</h4>
                             </div>
                         </div>
                     </Col>
 
-                    <Col md={4}><img src={integrations.src} /></Col>
+                    <Col md={4}><img src={integrations.src} className="companies" /></Col>
                 </Row>
             </Grid>
         )

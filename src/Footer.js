@@ -16,8 +16,8 @@ class Footer extends Component {
                     <Col md={6} className="height-100">
                         <div className="flex-parent">
                             <div className="flex-child text-align-left">
-                                <h3 className="bold">{footer.header}</h3>
-                                <h3 className="margin-top-0">{footer.subheader}</h3>
+                                <h3 className="bold header margin-bottom-0">{footer.header}</h3>
+                                <h3 className="margin-top-0 subheader">{footer.subheader}</h3>
                             </div>
                         </div>
                     </Col>
@@ -25,7 +25,7 @@ class Footer extends Component {
                     <Col md={6} className="height-100 text-align-left">
                         <div className="flex-parent left">
                             <div className="flex-child">
-                                <button className="cta cta-primary margin-right-40">{footer.button1}</button>
+                                <button className="cta cta-secondary margin-right-40">{footer.button1}</button>
                                 <button className="cta cta-secondary">{footer.button2}</button>
                             </div>
                         </div>

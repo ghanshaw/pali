@@ -32,7 +32,7 @@ class Solution extends Component {
                 </Row>
 
                 <Row className="margin-bottom-50">
-                    <Col><h3>{solution.subheader}</h3></Col>
+                    <Col><h3 className="margin-top-0">{solution.subheader}</h3></Col>
                 </Row>
 
                 <Row className="margin-bottom-75">{this.generateFigCaptions()}</Row>
@@ -40,16 +40,22 @@ class Solution extends Component {
                 <Row className="margin-bottom-50">
                     <Col md={6}>
                         <div className="card">
-                            <h4 className="bold">{solution.enterprise.header}</h4>
-                            <h4>{solution.enterprise.body}</h4>
-                        </div>
+                            <img src="images/enterprise.svg" className="icon"/>
+                            <div className="content"> 
+                                <h4 className="bold">{solution.enterprise.header}</h4>
+                                <h4>{solution.enterprise.body}</h4>
+                            </div>
+                        </div>        
                     </Col>
                 
                     <Col md={6}>
                         <div className="card">
-                            <h4 className="bold">{solution.accountants.header}</h4>
-                            <h4>{solution.accountants.body}</h4>
-                        </div>
+                            <img src="images/calculator.svg" className="icon"/>
+                            <div className="content"> 
+                                <h4 className="bold">{solution.accountants.header}</h4>
+                                <h4>{solution.accountants.body}</h4>
+                            </div>
+                        </div>        
                     </Col>
                 </Row>
             </Grid>

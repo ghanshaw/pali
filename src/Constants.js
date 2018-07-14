@@ -10,15 +10,15 @@ export const hero = {
       your business expense complexities, so you can focus on getting stuff done.",
       button1: "Start Free Trial",
     button2: "Learn More",
-    src: "images/macbook_air_frame_with_img.png"
+    src: "images/macbook_air_frame_with_img.png",
+    subheader: "Business expense is important. Managing them is hard. Pali changes that."
 }
 
 ///////////////////////////
 // What is Pali?
 ///////////////////////////
 export const whatIsPali = {
-  header: "Business expense is important. Managing them is hard. Pali changes that.",
-  subheader: 
+  header: 
     "Pali is an automated business expense solution that makes it easy to stay on \
     top of your company spending. We enable you give your employee corporate \
     payment cards to to spend and automate reports while helping you manage \
